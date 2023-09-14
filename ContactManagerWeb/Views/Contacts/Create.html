@@ -1,0 +1,51 @@
+@page
+@model YourNamespace.CreateModel // Replace with your actual model namespace
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create Contact</title>
+    <!-- Add your CSS links or styles here -->
+</head>
+<body>
+    <header>
+        <h1>Create New Contact</h1>
+    </header>
+    
+    <nav>
+        <!-- Add navigation links or menu items here -->
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Your main content goes here -->
+        <section>
+            <h2>Contact Information</h2>
+            <form method="post">
+                <div>
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" name="Name" value="@Model.Contact.Name" required />
+                </div>
+                <div>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email" value="@Model.Contact.Email" required />
+                </div>
+                <!-- Add more form fields as needed -->
+                <div>
+                    <button type="submit">Create Contact</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+        <p>&copy; @DateTime.Now.Year Contact Manager App</p>
+    </footer>
+</body>
+</html>
