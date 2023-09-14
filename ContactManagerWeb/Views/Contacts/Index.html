@@ -1,50 +1,35 @@
-@page
-@model IEnumerable<ContactManagerWeb.Models.Contact>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Manager</title>
+    <!-- Add your CSS links or styles here -->
+</head>
+<body>
+    <header>
+        <h1>Contact Manager</h1>
+    </header>
+    
+    <nav>
+        <!-- Add navigation links or menu items here -->
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
 
-@{
-    ViewData["Title"] = "Contacts";
-}
+    <main>
+        <!-- Your main content goes here -->
+        <section>
+            <h2>Welcome to the Contact Manager App</h2>
+            <p>This is the homepage of our Contact Manager application. You can use this app to manage your contacts.</p>
+        </section>
+    </main>
 
-<h2>Contacts</h2>
-
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.First().Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.First().Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.First().Phone)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Phone)
-                </td>
-                <td>
-                    <a asp-page="Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-page="Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-page="Delete" asp-route-id="@item.ID">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2023 Contact Manager App</p>
+    </footer>
+</body>
+</html>
