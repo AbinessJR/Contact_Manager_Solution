@@ -1,1 +1,38 @@
+ContactManagerSolution/   (Solution Directory)
+|-- ContactManagerApp/   (Windows Forms Application Project)
+|   |-- Form1.cs
+|   |-- ContactManager.cs
+|   |-- Program.cs
+|   |-- App.config
+|   |-- ContactManagerApp.csproj
+|   |-- bin/
+|   |-- obj/
+|
+|-- ContactManagerWeb/   (ASP.NET Core Web Application Project)
+|   |-- Controllers/
+|   |   |-- ContactsController.cs
+|   |
+|   |-- Models/
+|   |   |-- Contact.cs
+|   |   |-- ContactDbContext.cs
+|   |
+|   |-- Views/
+|   |   |-- Contacts/
+|   |   |   |-- Index.cshtml
+|   |   |   |-- Create.cshtml
+|   |   |   |-- Edit.cshtml
+|   |   |   |-- Delete.cshtml
+|   |
+|   |-- appsettings.json
+|   |-- appsettings.Development.json
+|   |-- ContactManagerWeb.csproj
+|   |-- Startup.cs
+|   |-- Program.cs
+|   |-- bin/
+|   |-- obj/
+|
+|-- .vscode/   (Visual Studio Code Configuration Folder)
+|   |-- launch.json
+|
+|-- ContactManagerSolution.sln   (Visual Studio Solution File)
 
